@@ -66,11 +66,6 @@ body{
   margin: 0px;
 }
 
-/* ---------------------- */
-
-/* product list css */
-
-
 /* --------------------- */
 
 /* product css */
@@ -156,6 +151,7 @@ height: 100px;
   margin: 0px;
   font-size: 2.8vw;
   font-weight: 400;
+  line-height: 2;
 }
 
 .footer-outer-box .other-option Button{

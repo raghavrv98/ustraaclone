@@ -1,6 +1,6 @@
 # *_Ustraa clone assignment_*
 This is an ustraa clone assignment. 
-please view on mobile view.
+please review on mobile view.
 This UI is only applicable for mobile view as per the assignment.
 
 * *_Port_*

@@ -1,6 +1,5 @@
 import React from "react";
 import Product from "./product";
-import Footer from './footer';
 
 class ProductList extends React.Component {
 
@@ -19,7 +18,7 @@ class ProductList extends React.Component {
 	render() {
 		return <div>
 			<div className="product-list-outer-box">
-				{this.state.productList.map(val => <Product
+				{this.state.productList.map(val => <React.Fragment key={val.id}><Product
 					id={val.id}
 					imgUrl={val.image_urls.x520}
 					altText={val.alt_text}
@@ -30,9 +29,8 @@ class ProductList extends React.Component {
 					final_price={val.final_price}
 					rating={'4.1'}
 					isAvailable={val.is_in_stock}
-				/>)}
+				/></React.Fragment>)}
 			</div>
-			<Footer categoryTabs={this.props.categoryTabs} categoryName={this.props.categoryName} />
 		</div>
 	}
 }

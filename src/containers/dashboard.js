@@ -31,7 +31,12 @@ class Dashboard extends React.Component {
 	render() {
 		return <div>
 			{this.state.categoryTabs.length > 0 ?
-				<CategoryTabs categoryTabs={this.state.categoryTabs} categoryId={this.state.categoryId} categoryName={this.state.categoryTabs[0].category_name} /> : <h1>Loading ....</h1>
+				<CategoryTabs
+					categoryTabs={this.state.categoryTabs}
+					categoryId={this.state.categoryId}
+					categoryName={this.state.categoryTabs[0].category_name} />
+				:
+				<h1>Loading ....</h1>
 			}
 		</div>
 	}
